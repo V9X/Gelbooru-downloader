@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel= "stylesheet", href= "popup.css">
+    </head>
+    <body>
+        <div id="title">
+            <div id="titleText">gelbooru downloader</div>
+            <img id="titleLogo">
+        </div>
+
+        <button id="downloadJson" class="popupButton">
+            <img class = "popupButtonIcon" id="downloadButtonIcon">
+            <div class="popupButtonText" id="downloadToJsonText"></div>
+        </button>
+
+        <button id="clkInput" class="popupButton">
+            <img class = "popupButtonIcon" id="uploadButtonIcon">
+            <div class="popupButtonText">Restore history from JSON</div>
+            <input type="file" id="uploadJsonFile">
+        </button>
+
+        <button id="clearHistory" class ="popupButton">
+            <img class = "popupButtonIcon" id="clearButtonIcon">
+            <div class="popupButtonText">Remove history</div>
+        </button>
+
+        <div class="spaceBetweenButtons"></div>
+
+        <button id="openGithubPage" class="popupButton">
+            <img class="popupButtonIcon" id="githubButtonIcon">
+            <div class = "popupButtonText">Github</div>
+        </button>
+
+        <script src="popup.js"></script>
+    </body>
+</html>

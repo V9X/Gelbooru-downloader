@@ -1,0 +1,101 @@
+.downloadButton{
+    position: absolute;
+    bottom: 0;
+    height: 0px;
+    width: 195px;
+    background-color: #1f82fc40;
+    box-shadow: none;
+    border: 0;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.2s ease;
+    overflow: hidden;
+}
+
+.downloadIcon{
+    height: 30px;
+    width: 30px;
+}
+
+.thumbnail-preview:hover .downloadButton {
+    height: 35px;
+}
+
+.downloadButton:hover{
+    background-color: #1f82fc95;
+}
+
+.downloadButton:active{
+    height: 30px !important;
+}
+
+
+.removeButton{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    height: 0;
+    width: 30px;
+    background-color: #ff000040;
+    box-shadow: none;
+    border: 0;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.2s ease;
+    overflow: hidden;
+}
+
+.removeIcon{
+    height: 20px;
+    width: 20px;
+}
+
+.thumbnail-preview:hover .removeButton {
+    height: 30px;
+}
+
+.removeButton:hover{
+    background-color: #ff000080;
+
+}
+
+.removeButton:active{
+    height: 25px !important;
+}
+
+.thumbnail-preview{
+    height: 240px !important;
+    width: 200px;
+    margin-top: 10px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    align-items: unset !important;
+    outline-color: #1F82FC;
+    outline-style: solid;
+    outline-width: 2px;
+}
+
+.imageContainer00{
+    position: relative;
+    width: 200px;
+    height: 240px;
+    overflow: hidden;
+    background-color: #1f82fc11;
+}
+
+.thumbnail00{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 200px !important;
+    max-height: 240px !important;
+}

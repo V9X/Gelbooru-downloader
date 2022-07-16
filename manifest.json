@@ -1,0 +1,41 @@
+{
+    "name": "Gelbooru downloader",
+    "description": "Makes downloading from gelbooru in full quality much easier and faster.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts":[
+        {
+            "matches": ["https://gelbooru.com/*"],
+            "js": ["content/content.js"],
+            "css": ["content/styles.css"]
+        }
+    ],
+
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "web_accessible_resources": [
+        {
+            "resources": ["icons/*"],
+            "matches": ["https://gelbooru.com/*"]
+        }
+    ],
+    "permissions":[
+        "downloads",
+        "storage",
+        "tabs"
+    ],
+
+    "icons":{
+        "16": "logo/logo16.png",
+        "32": "logo/logo32.png",
+        "48": "logo/logo48.png",
+        "128": "logo/logo128.png"
+    }
+    
+}
